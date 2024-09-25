@@ -20,6 +20,8 @@
   <link href="assets/css/magnific-popup.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
   <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/animate.css/animate.min.css">
+  <link href="assets/css/aos.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,6 +32,7 @@
 </head>
 
 <body id="home">
+  <div class="loader"></div> <!-- begin:header -->
 
   <!-- begin:header -->
   <div class="header header-page">
@@ -44,11 +47,11 @@
           </div><!-- .col-sm-8 -->
           <div class="col-sm-4 hidden-xs">
             <div class="nav-utility nav-right">
-              <a href="#" class="nav-item"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="nav-item"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="nav-item"><i class="fa fa-linkedin"></i></a>
-              <a href="#" class="nav-item"><i class="fa fa-pinterest"></i></a>
-              <a href="#" class="nav-item"><i class="fa fa-envelope-o"></i></a>
+              <a href="#" class="nav-item animated zoomIn"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="nav-item animated zoomIn"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="nav-item animated zoomIn"><i class="fa fa-linkedin"></i></a>
+              <a href="#" class="nav-item animated zoomIn"><i class="fa fa-pinterest"></i></a>
+              <a href="#" class="nav-item animated zoomIn"><i class="fa fa-envelope-o"></i></a>
             </div><!-- .nav-utility -->
           </div><!-- .col-sm-4 -->
         </div><!-- .row -->
@@ -76,9 +79,9 @@
 
                 <div class="menu-testing-menu-container">
                   <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
-                    <li class="menu-item"><a href="index.html">Home</a></li>
-                    <li class="menu-item"><a href="about.html">About</a></li>
-                    <li class="menu-item"><a href="service.html">Services</a></li>
+                    <li class="menu-item animated zoomIn"><a href="index.html">Home</a></li>
+                    <li class="menu-item animated zoomIn"><a href="about.html">About</a></li>
+                    <li class="menu-item animated zoomIn"><a href="service.html">Services</a></li>
                     <!-- <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Services</a>
                                                       <ul class="sub-menu">
                                                         <li class="menu-item current-menu-item"><a href="service.html">All Services</a></li>
@@ -112,8 +115,9 @@
                                                       </ul>
                                                     </li>
                                                     <li class="menu-item"><a href="project.html">Projects</a></li> -->
-                    <li class="menu-item current-menu-item"><a href="privacy.html">Privacy Policy</a></li>
-                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                    <li class="menu-item current-menu-item animated zoomIn"><a href="privacy.html">Privacy Policy</a>
+                    </li>
+                    <li class="menu-item animated zoomIn"><a href="contact.html">Contact</a></li>
                   </ul>
                 </div>
               </nav><!-- #site-navigation -->
@@ -131,7 +135,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <h1 class="main-title-primary">Privacy Policy</h1>
+          <h1 class="main-title-primary animated fadeInRight">Privacy Policy</h1>
         </div><!-- .col-## -->
       </div><!-- .row -->
     </div><!-- .container -->
@@ -163,83 +167,89 @@
             <div class="entry-content">
               <article class="blog-entry">
                 <div class="blog-entry-content">
-                  <h2>Introduction</h2>
-                  <p>Welcome to AKcon Africa! We care about your privacy and want to explain
+                  <h2 class="scroll-class" data-aos="fade-up">Introduction</h2>
+                  <p class="scroll-class" data-aos="fade-up">Welcome to AKcon Africa! We care about your privacy and
+                    want to explain
                     how we handle your personal information.</p>
 
-                  <h3>What Information We Collect</h3>
-                  <p>We collect information like your name, email, phone number, and any other
+                  <h3 class="scroll-class" data-aos="fade-up">What Information We Collect</h3>
+                  <p class="scroll-class" data-aos="fade-up">We collect information like your name, email, phone number,
+                    and any other
                     details you provide when you contact us or use our services.
                   </p>
 
-                  <h3>How We Use Your Information</h3>
-                  <p>We use your information to:</p>
+                  <h3 class="scroll-class" data-aos="fade-up">How We Use Your Information</h3>
+                  <p class="scroll-class" data-aos="fade-up">We use your information to:</p>
                   <ul style="list-style: none;">
-                    <li>
+                    <li class="scroll-class" data-aos="fade-up">
                       <i class="icon-size bi bi-check-circle-fill"></i><span style="margin-left:10px">Provide and
                         improve our services</span>
                     </li>
-                    <li>
+                    <li class="scroll-class" data-aos="fade-up">
                       <i class="icon-size bi bi-check-circle-fill"></i><span style="margin-left:10px">Communicate with
                         you</span>
                     </li>
-                    <li>
+                    <li class="scroll-class" data-aos="fade-up">
                       <i class="icon-size bi bi-check-circle-fill"></i><span style="margin-left:10px">Ensure your data
                         is safe and secure</span>
                     </li>
                   </ul>
 
-                  <h3>Sharing Your Information</h3>
-                  <p>We may share your information with trusted partners who help us deliver
+                  <h3 class="scroll-class" data-aos="fade-up">Sharing Your Information</h3>
+                  <p class="scroll-class" data-aos="fade-up">We may share your information with trusted partners who
+                    help us deliver
                     our services. We make sure they follow strict privacy rules.</p>
 
-                  <h3>Your Rights</h3>
-                  <p>You have the right to:</p>
+                  <h3 class="scroll-class" data-aos="fade-up">Your Rights</h3>
+                  <p class="scroll-class" data-aos="fade-up">You have the right to:</p>
                   <ul style="list-style: none;">
-                    <li>
+                    <li class="scroll-class" data-aos="fade-up">
                       <i class="icon-size bi bi-check-circle-fill"></i><span style="margin-left:10px">Provide and
                         Access your information</span>
                     </li>
-                    <li>
+                    <li class="scroll-class" data-aos="fade-up">
                       <i class="icon-size bi bi-check-circle-fill"></i><span style="margin-left:10px">Correct any
                         mistakes</span>
                     </li>
-                    <li>
+                    <li class="scroll-class" data-aos="fade-up">
                       <i class="icon-size bi bi-check-circle-fill"></i><span style="margin-left:10px">Ask us to delete
                         your information</span>
                     </li>
-                    <li>
+                    <li class="scroll-class" data-aos="fade-up">
                       <i class="icon-size bi bi-check-circle-fill"></i><span style="margin-left:10px">Limit how we use
                         your information</span>
                     </li>
                   </ul>
 
-                  <h3>How We Protect Your Information</h3>
-                  <p>We use strong security measures to keep your data safe from unauthorized
+                  <h3 class="scroll-class" data-aos="fade-up">How We Protect Your Information</h3>
+                  <p class="scroll-class" data-aos="fade-up">We use strong security measures to keep your data safe from
+                    unauthorized
                     access, changes, or loss.
                   </p>
 
-                  <h3>Changes to This Policy</h3>
-                  <p>We may update this policy from time to time. We will let you know if there
+                  <h3 class="scroll-class" data-aos="fade-up">Changes to This Policy</h3>
+                  <p class="scroll-class" data-aos="fade-up">We may update this policy from time to time. We will let
+                    you know if there
                     are any important changes.
                   </p>
 
-                  <h3>Contact Us</h3>
-                  <p>If you have any questions or concerns about your privacy, please contact
+                  <h3 class="scroll-class" data-aos="fade-up">Contact Us</h3>
+                  <p class="scroll-class" data-aos="fade-up">If you have any questions or concerns about your privacy,
+                    please contact
                     us at:</p>
                   <ul style="list-style: none;">
-                    <li>
+                    <li class="scroll-class" data-aos="fade-up">
                       <i class="icon-size bi bi-check-circle-fill"></i><span
                         style="margin-left:10px"><strong>Email:</strong>
                         kenya@akconafrica.com</span>
                     </li>
-                    <li>
+                    <li class="scroll-class" data-aos="fade-up">
                       <i class="icon-size bi bi-check-circle-fill"></i><span
                         style="margin-left:10px"><strong>Phone:</strong> +44
                         7863579495
                       </span>
                     </li>
-                    <li>
+                    <li class="scroll-class" data-aos="fade-up">
                       <i class="icon-size bi bi-check-circle-fill"></i><span style="margin-left:10px"><strong>Address:
                         </strong> 45
                         Bickley Street London SW17 9NF UK</span>
@@ -256,7 +266,35 @@
     <!-- end:content-section -->
   </div><!-- .site-main -->
   <!-- end:site-main -->
+  <section id="copyright" class="copyright bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 copy-left animated fadeInUp">
+          <p><a target="_blank" href="#"><span id="current-year"></span> @ AKcon Africa</a>.
+            All Rights Reserved. </p>
+        </div><!-- .col-sm-6 -->
 
+        <div class="col-sm-6 copy-right">
+          <ul class="social-icon">
+            <li class="animated zoomIn"><a href="#" target="_blank" class="icon-twitter"><i
+                  class="fa fa-twitter"></i></a>
+            </li>
+            <li class="animated zoomIn"><a href="#" target="_blank" class="icon-facebook"><i
+                  class="fa fa-facebook-square"></i></a></li>
+            <li class="animated zoomIn"><a href="#" target="_blank" class="icon-youtube"><i
+                  class="fa fa-youtube"></i></a>
+            </li>
+            <li class="animated zoomIn"><a href="#" target="_blank" class="icon-instagram"><i
+                  class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div><!-- .col-sm-6 -->
+      </div><!-- .row -->
+    </div><!-- .container -->
+  </section>
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear;
+  </script>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="assets/plugins/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -269,6 +307,40 @@
   <script src="assets/plugins/isotope.pkgd.min.js"></script>
   <script src="assets/plugins/owl.carousel.min.js"></script>
   <script src="assets/js/script.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    document.addEventListener('scroll', function () {
+      const element = document.querySelector('.scroll-class');
+      const position = element.getBoundingClientRect();
+
+      if (position.top < window.innerHeight && position.bottom >= 0) {
+        let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Check if scrolling down
+        if (currentScrollTop > lastScrollTop) {
+          element.classList.remove('fadeInDown'); // Remove opposite animation class
+          element.classList.add('animated', 'fadeInUp');
+        }
+        // Check if scrolling up
+        else {
+          element.classList.remove('fadeInUp'); // Remove opposite animation class
+          element.classList.add('animated', 'fadeInDown');
+        }
+
+        // Update last scroll position
+        lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For mobile or negative scrolling
+      }
+    });
+  </script>
+  <script>
+    $(window).on('load', function () {
+      // Animate loader off-screen
+      $(".loader").fadeOut("slow");
+    });
+  </script>
 </body>
 
 </html>

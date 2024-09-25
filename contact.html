@@ -20,7 +20,8 @@
   <link href="assets/css/magnific-popup.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
   <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="assets/animate.css/animate.min.css">
+  <link href="assets/css/aos.css" rel="stylesheet">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -30,6 +31,7 @@
 </head>
 
 <body id="home">
+  <div class="loader"></div> <!-- begin:header -->
 
   <!-- begin:header -->
   <div class="header header-page">
@@ -44,11 +46,11 @@
           </div><!-- .col-sm-8 -->
           <div class="col-sm-4 hidden-xs">
             <div class="nav-utility nav-right">
-              <a href="#" class="nav-item"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="nav-item"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="nav-item"><i class="fa fa-linkedin"></i></a>
-              <a href="#" class="nav-item"><i class="fa fa-pinterest"></i></a>
-              <a href="#" class="nav-item"><i class="fa fa-envelope-o"></i></a>
+              <a href="#" class="nav-item animated zoomIn"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="nav-item animated zoomIn"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="nav-item animated zoomIn"><i class="fa fa-linkedin"></i></a>
+              <a href="#" class="nav-item animated zoomIn"><i class="fa fa-pinterest"></i></a>
+              <a href="#" class="nav-item animated zoomIn"><i class="fa fa-envelope-o"></i></a>
             </div><!-- .nav-utility -->
           </div><!-- .col-sm-4 -->
         </div><!-- .row -->
@@ -78,44 +80,45 @@
 
                 <div class="menu-testing-menu-container">
                   <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
-                    <li class="menu-item"><a href="index.html">Home</a></li>
-                    <li class="menu-item"><a href="about.html">About</a></li>
-                    <li class="menu-item"><a href="service.html">Services</a></li>
+                    <li class="menu-item animated zoomIn"><a href="index.html">Home</a></li>
+                    <li class="menu-item animated zoomIn"><a href="about.html">About</a></li>
+                    <li class="menu-item animated zoomIn"><a href="service.html">Services</a></li>
                     <!-- <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Services</a>
-                                      <ul class="sub-menu">
-                                        <li class="menu-item current-menu-item"><a href="service.html">All Services</a></li>
-                                        <li class="menu-item"><a href="service-item.html">Construction Consultant</a></li>
-                                        <li class="menu-item"><a href="service-item.html">General Contracting</a></li>
-                                        <li class="menu-item"><a href="service-item.html">House Renovation</a></li>
-                                        <li class="menu-item"><a href="service-item.html">Construction Management</a></li>
-                                        <li class="menu-item"><a href="service-item.html">Design and Build</a></li>
-                                      </ul>
-                                    </li> -->
+                                                                      <ul class="sub-menu">
+                                                                        <li class="menu-item current-menu-item"><a href="service.html">All Services</a></li>
+                                                                        <li class="menu-item"><a href="service-item.html">Construction Consultant</a></li>
+                                                                        <li class="menu-item"><a href="service-item.html">General Contracting</a></li>
+                                                                        <li class="menu-item"><a href="service-item.html">House Renovation</a></li>
+                                                                        <li class="menu-item"><a href="service-item.html">Construction Management</a></li>
+                                                                        <li class="menu-item"><a href="service-item.html">Design and Build</a></li>
+                                                                      </ul>
+                                                                    </li> -->
                     <!-- <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Features</a>
-                                      <ul class="sub-menu">
-                                        <li class="menu-item"><a href="single.html">Single Post</a></li>
-                                        <li class="menu-item"><a href="single-fullwidth.html">Single Post Full Width</a></li>
-                                        <li class="menu-item"><a href="page-fullwidth.html">Page Full Width</a></li>
-                                        <li class="menu-item"><a href="page-sidebar.html">Page With Sidebar</a></li>
-                                        <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Shortcodes</a>
-                                          <ul class="sub-menu">
-                                            <li class="menu-item"><a href="alert.html">Alert</a></li>
-                                            <li class="menu-item"><a href="progress.html">Progress Bar</a></li>
-                                            <li class="menu-item"><a href="social.html">Social Icon</a></li>
-                                            <li class="menu-item"><a href="button.html">Button &amp; Label</a></li>
-                                            <li class="menu-item"><a href="accordion.html">Accordion</a></li>
-                                            <li class="menu-item"><a href="tab.html">Tabs</a></li>
-                                            <li class="menu-item"><a href="pricing.html">Pricing</a></li>
-                                          </ul>
-                                        </li>
-                                        <li class="menu-item"><a href="typography.html">Typography</a></li>
-                                        <li class="menu-item"><a href="404.html">Not Found</a></li>
-                                        <li class="menu-item"><a href="comingsoon.html">Comingsoon</a></li>
-                                      </ul>
-                                    </li>
-                                    <li class="menu-item"><a href="project.html">Projects</a></li> -->
-                    <li class="menu-item"><a href="privacy.html">Privacy Policy</a></li>
-                    <li class="menu-item current-menu-item"><a href="contact.html">Contact</a></li>
+                                                                      <ul class="sub-menu">
+                                                                        <li class="menu-item"><a href="single.html">Single Post</a></li>
+                                                                        <li class="menu-item"><a href="single-fullwidth.html">Single Post Full Width</a></li>
+                                                                        <li class="menu-item"><a href="page-fullwidth.html">Page Full Width</a></li>
+                                                                        <li class="menu-item"><a href="page-sidebar.html">Page With Sidebar</a></li>
+                                                                        <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Shortcodes</a>
+                                                                          <ul class="sub-menu">
+                                                                            <li class="menu-item"><a href="alert.html">Alert</a></li>
+                                                                            <li class="menu-item"><a href="progress.html">Progress Bar</a></li>
+                                                                            <li class="menu-item"><a href="social.html">Social Icon</a></li>
+                                                                            <li class="menu-item"><a href="button.html">Button &amp; Label</a></li>
+                                                                            <li class="menu-item"><a href="accordion.html">Accordion</a></li>
+                                                                            <li class="menu-item"><a href="tab.html">Tabs</a></li>
+                                                                            <li class="menu-item"><a href="pricing.html">Pricing</a></li>
+                                                                          </ul>
+                                                                        </li>
+                                                                        <li class="menu-item"><a href="typography.html">Typography</a></li>
+                                                                        <li class="menu-item"><a href="404.html">Not Found</a></li>
+                                                                        <li class="menu-item"><a href="comingsoon.html">Comingsoon</a></li>
+                                                                      </ul>
+                                                                    </li>
+                                                                    <li class="menu-item"><a href="project.html">Projects</a></li> -->
+                    <li class="menu-item animated zoomIn"><a href="privacy.html">Privacy Policy</a>
+                    </li>
+                    <li class="menu-item current-menu-item animated zoomIn"><a href="contact.html">Contact</a></li>
                   </ul>
                 </div>
               </nav><!-- #site-navigation -->
@@ -133,8 +136,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <h1 class="main-title-primary">Contact</h1>
-          <h4 class="main-title-secondary">Contact our company.</h4>
+          <h1 class="main-title-primary  animated fadeInRight">Contact</h1>
+          <h4 class="main-title-secondary  animated fadeInUp">Contact our company.</h4>
         </div><!-- .col-## -->
       </div><!-- .row -->
     </div><!-- .container -->
@@ -171,7 +174,7 @@
         <div class="container">
           <div class="col-6">
             <div class="row">
-              <div class="col-md-4 col-sm-6">
+              <div class="col-md-4 col-sm-6 animated rubberBand">
                 <div class="contact-item">
                   <div class="contact-item-icon">
                     <i class="fa fa-phone"></i>
@@ -180,7 +183,7 @@
                   <div class="contact-item-info">+44 7863579495</div>
                 </div><!-- .contact-item -->
               </div><!-- .col-# -->
-              <div class="col-md-4 col-sm-6">
+              <div class="col-md-4 col-sm-6 animated rubberBand">
                 <div class="contact-item">
                   <div class="contact-item-icon">
                     <i class="fa fa-envelope-o"></i>
@@ -189,7 +192,7 @@
                   <div class="contact-item-info">kenya@akconafrica.com</div>
                 </div><!-- .contact-item -->
               </div><!-- .col-# -->
-              <div class="col-md-4 col-sm-6">
+              <div class="col-md-4 col-sm-6 animated rubberBand">
                 <div class="contact-item">
                   <div class="contact-item-icon">
                     <i class="fa fa-map-marker"></i>
@@ -206,7 +209,35 @@
     <!-- end:block-section -->
   </div><!-- .site-main -->
   <!-- end:site-main -->
+  <section id="copyright" class="copyright bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 copy-left animated fadeInUp">
+          <p><a target="_blank" href="#"><span id="current-year"></span> @ AKcon Africa</a>.
+            All Rights Reserved. </p>
+        </div><!-- .col-sm-6 -->
 
+        <div class="col-sm-6 copy-right">
+          <ul class="social-icon">
+            <li class="animated zoomIn"><a href="#" target="_blank" class="icon-twitter"><i
+                  class="fa fa-twitter"></i></a>
+            </li>
+            <li class="animated zoomIn"><a href="#" target="_blank" class="icon-facebook"><i
+                  class="fa fa-facebook-square"></i></a></li>
+            <li class="animated zoomIn"><a href="#" target="_blank" class="icon-youtube"><i
+                  class="fa fa-youtube"></i></a>
+            </li>
+            <li class="animated zoomIn"><a href="#" target="_blank" class="icon-instagram"><i
+                  class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div><!-- .col-sm-6 -->
+      </div><!-- .row -->
+    </div><!-- .container -->
+  </section>
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear;
+  </script>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="assets/plugins/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -223,6 +254,40 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtR223ih2ZwVJX2SGBixD3p87Aa8RV2Is"></script>
   <script src="assets/js/map.js"></script>
   <script src="assets/js/script.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    document.addEventListener('scroll', function () {
+      const element = document.querySelector('.scroll-class');
+      const position = element.getBoundingClientRect();
+
+      if (position.top < window.innerHeight && position.bottom >= 0) {
+        let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Check if scrolling down
+        if (currentScrollTop > lastScrollTop) {
+          element.classList.remove('fadeInDown'); // Remove opposite animation class
+          element.classList.add('animated', 'fadeInUp');
+        }
+        // Check if scrolling up
+        else {
+          element.classList.remove('fadeInUp'); // Remove opposite animation class
+          element.classList.add('animated', 'fadeInDown');
+        }
+
+        // Update last scroll position
+        lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For mobile or negative scrolling
+      }
+    });
+  </script>
+  <script>
+    $(window).on('load', function () {
+      // Animate loader off-screen
+      $(".loader").fadeOut("slow");
+    });
+  </script>
 </body>
 
 </html>

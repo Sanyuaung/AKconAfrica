@@ -20,7 +20,8 @@
   <link href="assets/css/magnific-popup.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
   <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="assets/animate.css/animate.min.css">
+  <link href="assets/css/aos.css" rel="stylesheet">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -30,6 +31,7 @@
 </head>
 
 <body id="home">
+  <div class="loader"></div> <!-- begin:header -->
 
   <!-- begin:header -->
   <div class="header header-page">
@@ -44,11 +46,11 @@
           </div><!-- .col-sm-8 -->
           <div class="col-sm-4 hidden-xs">
             <div class="nav-utility nav-right">
-              <a href="#" class="nav-item"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="nav-item"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="nav-item"><i class="fa fa-linkedin"></i></a>
-              <a href="#" class="nav-item"><i class="fa fa-pinterest"></i></a>
-              <a href="#" class="nav-item"><i class="fa fa-envelope-o"></i></a>
+              <a href="#" class="nav-item animated zoomIn"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="nav-item animated zoomIn"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="nav-item animated zoomIn"><i class="fa fa-linkedin"></i></a>
+              <a href="#" class="nav-item animated zoomIn"><i class="fa fa-pinterest"></i></a>
+              <a href="#" class="nav-item animated zoomIn"><i class="fa fa-envelope-o"></i></a>
             </div><!-- .nav-utility -->
           </div><!-- .col-sm-4 -->
         </div><!-- .row -->
@@ -78,44 +80,45 @@
 
                 <div class="menu-testing-menu-container">
                   <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
-                    <li class="menu-item"><a href="index.html">Home</a></li>
-                    <li class="menu-item"><a href="about.html">About</a></li>
-                    <li class="menu-item  current-menu-item"><a href="service.html">Services</a></li>
+                    <li class="menu-item animated zoomIn"><a href="index.html">Home</a></li>
+                    <li class="menu-item animated zoomIn"><a href="about.html">About</a></li>
+                    <li class="menu-item current-menu-item animated zoomIn"><a href="service.html">Services</a></li>
                     <!-- <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Services</a>
-                                      <ul class="sub-menu">
-                                        <li class="menu-item current-menu-item"><a href="service.html">All Services</a></li>
-                                        <li class="menu-item"><a href="service-item.html">Construction Consultant</a></li>
-                                        <li class="menu-item"><a href="service-item.html">General Contracting</a></li>
-                                        <li class="menu-item"><a href="service-item.html">House Renovation</a></li>
-                                        <li class="menu-item"><a href="service-item.html">Construction Management</a></li>
-                                        <li class="menu-item"><a href="service-item.html">Design and Build</a></li>
-                                      </ul>
-                                    </li> -->
+                                                                      <ul class="sub-menu">
+                                                                        <li class="menu-item current-menu-item"><a href="service.html">All Services</a></li>
+                                                                        <li class="menu-item"><a href="service-item.html">Construction Consultant</a></li>
+                                                                        <li class="menu-item"><a href="service-item.html">General Contracting</a></li>
+                                                                        <li class="menu-item"><a href="service-item.html">House Renovation</a></li>
+                                                                        <li class="menu-item"><a href="service-item.html">Construction Management</a></li>
+                                                                        <li class="menu-item"><a href="service-item.html">Design and Build</a></li>
+                                                                      </ul>
+                                                                    </li> -->
                     <!-- <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Features</a>
-                                      <ul class="sub-menu">
-                                        <li class="menu-item"><a href="single.html">Single Post</a></li>
-                                        <li class="menu-item"><a href="single-fullwidth.html">Single Post Full Width</a></li>
-                                        <li class="menu-item"><a href="page-fullwidth.html">Page Full Width</a></li>
-                                        <li class="menu-item"><a href="page-sidebar.html">Page With Sidebar</a></li>
-                                        <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Shortcodes</a>
-                                          <ul class="sub-menu">
-                                            <li class="menu-item"><a href="alert.html">Alert</a></li>
-                                            <li class="menu-item"><a href="progress.html">Progress Bar</a></li>
-                                            <li class="menu-item"><a href="social.html">Social Icon</a></li>
-                                            <li class="menu-item"><a href="button.html">Button &amp; Label</a></li>
-                                            <li class="menu-item"><a href="accordion.html">Accordion</a></li>
-                                            <li class="menu-item"><a href="tab.html">Tabs</a></li>
-                                            <li class="menu-item"><a href="pricing.html">Pricing</a></li>
-                                          </ul>
-                                        </li>
-                                        <li class="menu-item"><a href="typography.html">Typography</a></li>
-                                        <li class="menu-item"><a href="404.html">Not Found</a></li>
-                                        <li class="menu-item"><a href="comingsoon.html">Comingsoon</a></li>
-                                      </ul>
-                                    </li>
-                                    <li class="menu-item"><a href="project.html">Projects</a></li> -->
-                    <li class="menu-item"><a href="privacy.html">Privacy Policy</a></li>
-                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                                                      <ul class="sub-menu">
+                                                                        <li class="menu-item"><a href="single.html">Single Post</a></li>
+                                                                        <li class="menu-item"><a href="single-fullwidth.html">Single Post Full Width</a></li>
+                                                                        <li class="menu-item"><a href="page-fullwidth.html">Page Full Width</a></li>
+                                                                        <li class="menu-item"><a href="page-sidebar.html">Page With Sidebar</a></li>
+                                                                        <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Shortcodes</a>
+                                                                          <ul class="sub-menu">
+                                                                            <li class="menu-item"><a href="alert.html">Alert</a></li>
+                                                                            <li class="menu-item"><a href="progress.html">Progress Bar</a></li>
+                                                                            <li class="menu-item"><a href="social.html">Social Icon</a></li>
+                                                                            <li class="menu-item"><a href="button.html">Button &amp; Label</a></li>
+                                                                            <li class="menu-item"><a href="accordion.html">Accordion</a></li>
+                                                                            <li class="menu-item"><a href="tab.html">Tabs</a></li>
+                                                                            <li class="menu-item"><a href="pricing.html">Pricing</a></li>
+                                                                          </ul>
+                                                                        </li>
+                                                                        <li class="menu-item"><a href="typography.html">Typography</a></li>
+                                                                        <li class="menu-item"><a href="404.html">Not Found</a></li>
+                                                                        <li class="menu-item"><a href="comingsoon.html">Comingsoon</a></li>
+                                                                      </ul>
+                                                                    </li>
+                                                                    <li class="menu-item"><a href="project.html">Projects</a></li> -->
+                    <li class="menu-item animated zoomIn"><a href="privacy.html">Privacy Policy</a>
+                    </li>
+                    <li class="menu-item animated zoomIn"><a href="contact.html">Contact</a></li>
                   </ul>
                 </div>
               </nav><!-- #site-navigation -->
@@ -133,8 +136,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <h1 class="main-title-primary">Services</h1>
-          <h4 class="main-title-secondary">What We Can Do</h4>
+          <h1 class="main-title-primary animated fadeInRight">Services</h1>
+          <h4 class="main-title-secondary animated fadeInUp">What We Can Do</h4>
         </div>
       </div><!-- .row -->
     </div><!-- .container -->
@@ -169,22 +172,22 @@
                   <div class="blog-entry">
                     <a href="#" class="blog-entry-thumbnail">
                       <img src="https://placehold.co/900x600" alt="Data Recovery & Secure Management"
-                        class="img-responsive">
+                        class="img-responsive  scroll-class" data-aos="fade-up">
                     </a>
-                    <div class="blog-entry-header">
+                    <div class="blog-entry-header  scroll-class" data-aos="fade-up">
                       <h2 class="entry-title"><a href="#" rel="bookmark">Data Recovery & Secure Management</a></h2>
                     </div>
                     <div class="blog-entry-content">
                       <ul style="list-style: none;">
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Safe Data Storage:</strong> <span>We keep your data secure.</span>
                         </li>
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Data Recovery:</strong> <span>We help you recover lost data.</span>
                         </li>
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Cloud Backup:</strong> <span>We store your data online for easy access.</span>
                         </li>
@@ -197,24 +200,24 @@
                   <div class="blog-entry">
                     <a href="#" class="blog-entry-thumbnail">
                       <img src="https://placehold.co/900x600" alt="Business Intelligence & Analytics"
-                        class="img-responsive">
+                        class="img-responsive scroll-class" data-aos="fade-up">
                     </a>
-                    <div class="blog-entry-header">
+                    <div class="blog-entry-header scroll-class" data-aos="fade-up">
                       <h2 class="entry-title"><a href="#" rel="bookmark">Business Intelligence & Analytics</a></h2>
                     </div>
                     <div class="blog-entry-content">
                       <ul style="list-style: none;">
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Business Intelligence:</strong> <span>We help you understand your business
                             data.</span>
                         </li>
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Performance Analytics:</strong> <span>We analyze how well your business is
                             doing.</span>
                         </li>
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Predictive Analytics:</strong> <span>We help you forecast future trends.</span>
                         </li>
@@ -226,23 +229,24 @@
                 <div class="col-sm-4">
                   <div class="blog-entry">
                     <a href="#" class="blog-entry-thumbnail">
-                      <img src="https://placehold.co/900x600" alt="Advanced Data Analytics & AI" class="img-responsive">
+                      <img src="https://placehold.co/900x600" alt="Advanced Data Analytics & AI"
+                        class="img-responsive scroll-class" data-aos="fade-up">
                     </a>
-                    <div class="blog-entry-header">
+                    <div class="blog-entry-header scroll-class" data-aos="fade-up">
                       <h2 class="entry-title"><a href="#" rel="bookmark">Advanced Data Analytics & AI</a></h2>
                     </div>
                     <div class="blog-entry-content">
                       <ul style="list-style: none;">
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Machine Learning:</strong> <span>We use smart technology to find patterns in your
                             data.</span>
                         </li>
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>AI Insights:</strong> <span>We provide insights using artificial intelligence.</span>
                         </li>
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Data Science Consulting:</strong> <span>We help you make sense of complex data.</span>
                         </li>
@@ -255,22 +259,23 @@
                 <div class="col-sm-4">
                   <div class="blog-entry">
                     <a href="#" class="blog-entry-thumbnail">
-                      <img src="https://placehold.co/900x600" alt="Industry-Specific Solutions" class="img-responsive">
+                      <img src="https://placehold.co/900x600" alt="Industry-Specific Solutions"
+                        class="img-responsive scroll-class" data-aos="fade-up">
                     </a>
-                    <div class="blog-entry-header">
+                    <div class="blog-entry-header scroll-class" data-aos="fade-up">
                       <h2 class="entry-title"><a href="#" rel="bookmark">Industry-Specific Solutions</a></h2>
                     </div>
                     <div class="blog-entry-content">
                       <ul style="list-style: none;">
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Agricultural Data:</strong> <span>We support farmers with data solutions.</span>
                         </li>
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Disaster Management:</strong> <span>We use data to help in emergencies.</span>
                         </li>
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Digital Services:</strong> <span>We offer digital solutions for various
                             industries.</span>
@@ -282,23 +287,24 @@
                 <div class="col-sm-4">
                   <div class="blog-entry">
                     <a href="#" class="blog-entry-thumbnail">
-                      <img src="https://placehold.co/900x600" alt="IT & Cloud Services" class="img-responsive">
+                      <img src="https://placehold.co/900x600" alt="IT & Cloud Services"
+                        class="img-responsive scroll-class" data-aos="fade-up">
                     </a>
-                    <div class="blog-entry-header">
+                    <div class="blog-entry-header scroll-class" data-aos="fade-up">
                       <h2 class="entry-title"><a href="#" rel="bookmark">IT & Cloud Services</a></h2>
                     </div>
                     <div class="blog-entry-content">
                       <ul style="list-style: none;">
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Cloud Migration:</strong> <span>We help you move your data to the cloud.
                           </span>
                         </li>
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>IT Management:</strong> <span>We manage your IT systems.</span>
                         </li>
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Data Centers:</strong> <span>We provide secure data storage solutions.</span>
                         </li>
@@ -309,22 +315,23 @@
                 <div class="col-sm-4">
                   <div class="blog-entry">
                     <a href="#" class="blog-entry-thumbnail">
-                      <img src="https://placehold.co/900x600" alt="Cybersecurity & Compliance" class="img-responsive">
+                      <img src="https://placehold.co/900x600" alt="Cybersecurity & Compliance"
+                        class="img-responsive scroll-class" data-aos="fade-up">
                     </a>
-                    <div class="blog-entry-header">
+                    <div class="blog-entry-header scroll-class" data-aos="fade-up">
                       <h2 class="entry-title"><a href="#" rel="bookmark">Cybersecurity & Compliance</a></h2>
                     </div>
                     <div class="blog-entry-content">
                       <ul style="list-style: none;">
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Data Protection:</strong> <span>We keep your data safe from threats. </span>
                         </li>
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Cybersecurity:</strong> <span>We protect your data from cyber attacks.</span>
                         </li>
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Regulatory Compliance:</strong> <span>We help you comply with data laws.</span>
                         </li>
@@ -335,19 +342,19 @@
                 <div class="col-lg-offset-4 offset-lg-4 col-sm-4">
                   <div class="blog-entry">
                     <a href="#" class="blog-entry-thumbnail">
-                      <img src="https://placehold.co/900x600" alt="Software Development & IT Consulting"
-                        class="img-responsive">
+                      <img src="https://placehold.co/900x600" alt="Software Development & IT Consulting scroll-class"
+                        data-aos="fade-up" class="img-responsive">
                     </a>
-                    <div class="blog-entry-header">
+                    <div class="blog-entry-header scroll-class" data-aos="fade-up">
                       <h2 class="entry-title"><a href="#" rel="bookmark">Software Development & IT Consulting</a></h2>
                     </div>
                     <div class="blog-entry-content">
                       <ul style="list-style: none;">
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>Custom Software:</strong> <span>We develop software tailored to your needs.</span>
                         </li>
-                        <li>
+                        <li class=" scroll-class" data-aos="fade-up">
                           <i class="icon-size bi bi-check-circle-fill"></i>
                           <strong>IT Consulting:</strong> <span>We provide expert advice on IT solutions.</span>
                         </li>
@@ -365,7 +372,35 @@
     <!-- end:content-section -->
   </div><!-- .site-main -->
   <!-- end:site-main -->
+  <section id="copyright" class="copyright bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 copy-left animated fadeInUp">
+          <p><a target="_blank" href="#"><span id="current-year"></span> @ AKcon Africa</a>.
+            All Rights Reserved. </p>
+        </div><!-- .col-sm-6 -->
 
+        <div class="col-sm-6 copy-right">
+          <ul class="social-icon">
+            <li class="animated zoomIn"><a href="#" target="_blank" class="icon-twitter"><i
+                  class="fa fa-twitter"></i></a>
+            </li>
+            <li class="animated zoomIn"><a href="#" target="_blank" class="icon-facebook"><i
+                  class="fa fa-facebook-square"></i></a></li>
+            <li class="animated zoomIn"><a href="#" target="_blank" class="icon-youtube"><i
+                  class="fa fa-youtube"></i></a>
+            </li>
+            <li class="animated zoomIn"><a href="#" target="_blank" class="icon-instagram"><i
+                  class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div><!-- .col-sm-6 -->
+      </div><!-- .row -->
+    </div><!-- .container -->
+  </section>
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear;
+  </script>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="assets/plugins/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -378,6 +413,40 @@
   <script src="assets/plugins/isotope.pkgd.min.js"></script>
   <script src="assets/plugins/owl.carousel.min.js"></script>
   <script src="assets/js/script.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    document.addEventListener('scroll', function () {
+      const element = document.querySelector('.scroll-class');
+      const position = element.getBoundingClientRect();
+
+      if (position.top < window.innerHeight && position.bottom >= 0) {
+        let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Check if scrolling down
+        if (currentScrollTop > lastScrollTop) {
+          element.classList.remove('fadeInDown'); // Remove opposite animation class
+          element.classList.add('animated', 'fadeInUp');
+        }
+        // Check if scrolling up
+        else {
+          element.classList.remove('fadeInUp'); // Remove opposite animation class
+          element.classList.add('animated', 'fadeInDown');
+        }
+
+        // Update last scroll position
+        lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For mobile or negative scrolling
+      }
+    });
+  </script>
+  <script>
+    $(window).on('load', function () {
+      // Animate loader off-screen
+      $(".loader").fadeOut("slow");
+    });
+  </script>
 </body>
 
 </html>
