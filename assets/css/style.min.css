@@ -4026,7 +4026,7 @@ hr {
     .main-navigation ul {
         float: none;
         border-top: none;
-        background-color: #fff
+        background-color: #000
     }
 
     .main-navigation ul ul {
@@ -4115,7 +4115,7 @@ hr {
         font-size: 12px;
         line-height: 22px;
         letter-spacing: 1px;
-        color: #6b6e80
+        color: #9395a5
     }
 
     .main-navigation a:focus,
@@ -4127,7 +4127,7 @@ hr {
     .main-navigation .current-menu-item>a,
     .main-navigation .current_page_ancestor>a,
     .main-navigation .current_page_item>a {
-        color: #2b2b2b;
+        color: #fff;
         text-decoration: none
     }
 }
