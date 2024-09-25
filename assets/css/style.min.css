@@ -5568,3 +5568,12 @@ img[class*=wp-image-] {
     justify-content: center;
     align-items: center;
 }
+.bg-image {
+    position: relative;
+    background-image: url('../img/5.jpg'); /* Add your image URL here */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 60px 0; /* Adjust padding as needed */
+    color: white; /* Make text white for better visibility */
+}
