@@ -3699,7 +3699,7 @@ hr {
 }
 
 .site-header.header-dark .menu-toggle {
-    margin-top: -45px;
+    margin-top: -65px;
     color: #fff
 }
 
@@ -3978,7 +3978,7 @@ hr {
 @media screen and (max-width:37.5em) {
     .main-navigation .menu-toggle {
         float: right;
-        margin-top: -44px;
+        margin-top: -70px;
         font-size: 18px;
         line-height: 18px;
         padding: 25px 15px 10px;
@@ -4368,10 +4368,10 @@ hr {
         line-height: 28px
     }
 
-    .site-branding .site-title.title-image img {
+    /* .site-branding .site-title.title-image img {
         max-height: 15px;
         margin-bottom: 5px
-    }
+    } */
 }
 
 .navbar-menu.nav-cta .btn {
